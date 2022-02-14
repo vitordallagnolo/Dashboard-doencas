@@ -45,6 +45,23 @@ Como boa prática em Flask, você pode definir a ENV de desenvolvimento utilizan
 $env:FLASK_ENV='development'
 ```
 
+**Configurando o banco**
+Via terminal Python, você deve executar os seguintes comandos para conectar a aplicação.
+Iniciando o banco: 
+```bash
+python models.py db init
+```
+
+Criando a migração de dados:
+```bash
+python models.py db migrate
+```
+
+Inserindo e criando tabelas no banco:
+```bash
+python models.py db upgrade
+```
+
 
 
 ### Run
